@@ -1,6 +1,6 @@
 import "./App.css";
-import "./components/Header";
-import { Header } from "./components/Header";
+import "./components/header/Header";
+import { Header } from "./components/header/Header";
 import { Balance } from "./components/Balance";
 import { IncomeExpenses } from "./components/IncomeExpenses";
 import { TransactionList } from "./components/TransactionList";
