@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { GlobalContext } from "../context/GlobalState";
+import { GlobalContext } from "../../context/GlobalState";
 
 export const Balance = () => {
   const { transactions } = useContext(GlobalContext);
@@ -8,8 +8,8 @@ export const Balance = () => {
 
   return (
     <>
-      <h4>Your Balance</h4>
-      <h1>${total}</h1>
+      <h4 data-testid="balance-heading">Your Balance</h4>
+      <h1 data-testid="balance-amount">${total}</h1>
     </>
   );
 };

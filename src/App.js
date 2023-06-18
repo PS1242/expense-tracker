@@ -1,7 +1,7 @@
 import "./App.css";
 import "./components/header/Header";
 import { Header } from "./components/header/Header";
-import { Balance } from "./components/Balance";
+import { Balance } from "./components/balance/Balance";
 import { IncomeExpenses } from "./components/IncomeExpenses";
 import { TransactionList } from "./components/TransactionList";
 import { AddTransactions } from "./components/AddTransactions";
