@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { GlobalContext } from "../context/GlobalState";
+import { GlobalContext } from "../../context/GlobalState";
 
 export const IncomeExpenses = () => {
   const { transactions } = useContext(GlobalContext);
@@ -20,12 +20,16 @@ export const IncomeExpenses = () => {
     <div className="inc-exp-container">
       <div>
         <h4>Income</h4>
-        <p className="money plus">+${income}</p>
+        <p className="money plus" data-testid="incomes">
+          +${income}
+        </p>
       </div>
 
       <div>
         <h4>Expense</h4>
-        <p className="money minus">-${expense}</p>
+        <p className="money minus" data-testid="expenses">
+          -${expense}
+        </p>
       </div>
     </div>
   );
