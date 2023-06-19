@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import { GlobalContext } from "../context/GlobalState";
+import { GlobalContext } from "../../context/GlobalState";
 
 export const AddTransactions = () => {
   const [text, setText] = useState("");
@@ -23,11 +23,12 @@ export const AddTransactions = () => {
 
   return (
     <>
-      <h3>Add new transaction</h3>
+      <h3 data-testid="add-transaction-heading">Add new transaction</h3>
       <form onSubmit={submitHandler}>
         <div className="form-control">
           <label htmlFor="text">Text</label>
           <input
+            id="text"
             type="text"
             value={text}
             onChange={(e) => setText(e.target.value)}
@@ -42,6 +43,7 @@ export const AddTransactions = () => {
           </label>
 
           <input
+            data-testid="amount-input"
             type="number"
             value={amount}
             onChange={(e) => setAmount(e.target.value)}
